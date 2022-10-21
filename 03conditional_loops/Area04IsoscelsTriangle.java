@@ -1,5 +1,5 @@
-package com.nabin;
 
+import java.lang.Math;
 import java.util.Scanner;
 
 public class Area04IsoscelsTriangle {
@@ -8,7 +8,7 @@ public class Area04IsoscelsTriangle {
         System.out.println("Enter length of equal sideis and base");
         double e = in.nextDouble();
         double b = in.nextDouble();
-        double s = (e*e - b*b / 4) * b / 2;
+        double s = Math.sqrt((e*e - b*b / 4)) * b / 2;
         System.out.println("Area of Isoscels triangle is = " + s);
     }
 }
